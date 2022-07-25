@@ -1,0 +1,11 @@
+.site-nav__link {
+  @include a-link;
+  transition: all 0.5s ease;
+}
+
+@include breakpoint-down (768px) {
+   .site-nav__link {
+    font-size: 18px;
+    line-height: 28px;
+   }
+}

@@ -1,0 +1,75 @@
+// CONTACT SECTION 
+.contact {
+  background-color: #F67E7E;
+  background-image: url("../../image/contact-left.png");
+  background-size:200px 122px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.contact__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact__heading {
+margin: 0;
+margin-left: 93px;
+font-family: Livvic;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 48px;
+color: #012F34;
+}
+
+.contact__button {
+  margin-right: 10px;
+  background-color: inherit;
+  border: 2px solid #012F34;
+  color: #012F34;
+  transition: all 0.5s ease;
+}
+
+.contact__button:hover {
+  background-color: #012F34;
+  border: 2px solid #012F34;
+  color: $white;
+}
+
+@include breakpoint-down (900px) {
+  .contact__heading {
+    margin-left: 93px;
+    font-size: 32px;
+    line-height: 32px;
+    }
+    .contact {
+      background-image: url("../../image/contact-left.png");
+      background-size:200px 122px;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+    }
+}
+
+@include breakpoint-down (645px) {
+  .contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact__heading {
+    margin: 0;
+    }
+
+  .contact__button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33px;
+  }
+}

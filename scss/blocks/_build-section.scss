@@ -1,0 +1,186 @@
+// BUILD SECTION 
+
+.build {
+  background-color: #012F34;
+  background-image: url("../../image/build-right-bottom.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  padding-top: 140px;
+  padding-bottom: 210px;
+}
+
+.build__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.build__coral__line {
+  display: inline-block;
+ background-color: $light-coral;
+ width: 50px;
+ height: 4px;
+}
+
+.build__heading {
+  margin-top: 54px;
+  width: 445px;
+  font-family: Livvic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: $white;
+}
+
+.build__right-content:first-child {
+  margin-top: 54px;
+}
+
+.build__right-content {
+  position: relative;
+}
+
+.build__right-content:first-child::before {
+  position: absolute;
+  top: 0;
+  left: -90px;
+  content: url("../../image/individual.png");
+}
+
+.build__right-content:nth-child(2):before {
+  position: absolute;
+  top: 0;
+  left: -90px;
+  content: url("../../image/implement.png");
+}
+
+.build__right-content:nth-child(3)::before {
+  position: absolute;
+  top: 0;
+  left: -90px;
+  content: url("../../image/productivity.png");
+}
+
+.build__coral {
+  color: $light-coral;
+  font-family: Livvic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+}
+
+.build__white {
+  max-width: 445px;
+margin-top: 16px;
+margin-bottom: 32px;  
+color: $white;
+font-family: Livvic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+}
+
+// responsive 
+@include breakpoint-down (1000px) {
+
+  .build {
+    background-position-y: top;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .build__wrapper {
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .build__coral__line {
+   width: 50px;
+   height: 4px;
+  }
+  
+  .build__heading {
+    margin-top: 54px;
+    margin-right: 140px;
+    max-width: 445px;
+    font-family: Livvic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: $white;
+  }
+  
+  .build__right-content {
+    position: relative;
+    // margin-left: 150px;
+  }
+  
+}
+
+
+@include breakpoint-down (615px) {
+
+  .build {
+    padding: 64px 0;
+  }
+
+  .build__right-content {
+    margin-top: 88px;
+    text-align: center;
+  }
+  
+  .build__wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+  
+  .build__heading {
+    margin-right: 0;
+    margin-top: 32px;
+    margin-bottom: 50px;
+    max-width: 200px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  
+  .build__right-content:first-child::before {
+    position: absolute;
+    top: -75px;
+    left: 128px;
+    content: url("../../image/individual.png");
+  }
+  
+  .build__right-content:nth-child(2):before {
+    position: absolute;
+    top: -75px;
+    left: 128px;
+    content: url("../../image/implement.png");
+  }
+  
+  .build__right-content:nth-child(3)::before {
+    position: absolute;
+    top: -75px;
+    left: 128px;
+    content: url("../../image/productivity.png");
+  }
+  
+  .build__coral {
+  
+  font-size: 18px;
+  line-height: 28px;
+  }
+  
+  .build__white {
+  max-width: 327px;
+  margin-top: 8px;
+  margin-bottom: 16px;  
+  font-size: 15px;
+  line-height: 25px;
+  }
+  
+}

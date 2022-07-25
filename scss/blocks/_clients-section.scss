@@ -1,0 +1,69 @@
+// clients section 
+
+.clients {
+  padding: 140px 0;
+  background-color: #012F34;
+  background-image: url("../../image/clients-bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.clients__heading {
+  margin: 0;
+  margin-bottom: 64px;
+font-family: Livvic;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 48px;
+text-align: center;
+color: $white;
+}
+
+.clients__list {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+// responsive 
+@include breakpoint-down (900px) {
+  .clients {
+    padding: 100px 0;
+    background-position: 0 -100px;
+  }
+
+  .clients__heading {
+  margin: 0;
+  margin-bottom: 48px;
+  font-size: 32px;
+  line-height: 32px;
+  }
+
+  .clients__img {
+    transform: scale(0.7, 0.7);
+  }
+}
+
+@include breakpoint-down (500px) {
+  .clients {
+    padding: 88px 0;
+    background-position: -100px -100px;
+  }
+
+  .clients__heading {
+  margin-bottom: 64px;
+  font-size: 32px;
+  line-height: 32px;
+  }
+
+  .clients__list {
+    flex-direction: column;
+  }
+
+  .clients__img {
+    margin-bottom: 56px;
+    transform: scale(0.9, 0.9);
+  }
+}

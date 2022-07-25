@@ -1,0 +1,133 @@
+// DELIVER SECTION 
+.deliver {
+  background-color: #004047;
+  background-image: url("../../image/deliver-left-top.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.deliver__wrapper {
+  padding-top: 140px;
+  padding-bottom: 151px;
+  background-image: url("../../image/deliver-right-bottom.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.deliver__heading {
+margin: 0;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+max-width: 932px;
+font-family: Livvic;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 48px;
+text-align: center;
+color: $white;
+}
+
+.deliver__heading-blue {
+  color: #79C8C7;
+}
+
+.deliver__cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.deliver__card {
+  background-image: url("../../image/quatation.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-top: 56px;
+  max-width: 350px;
+  text-align: center;
+}
+
+.deliver__quote {
+  margin: 0;
+  padding-top: 36px;
+  font-family: Livvic;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: $white;
+}
+
+.deliver__card-heading {
+margin: 0;
+margin-top: 24px;
+font-family: Livvic;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+text-align: center;
+color: #79C8C7;
+}
+
+.deliver__persons-info {
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 32px;
+  font-family: Livvic;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: $white;
+}
+
+// responsive 
+
+@include breakpoint-down (900px) {
+  .deliver__wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .deliver__heading {
+  max-width: 450px;
+  font-size: 32px;
+  line-height: 32px;
+  }
+  .deliver__cards {
+flex-direction: column;
+align-items: center;
+  }
+  
+  .deliver__card {
+    margin-top: 84px;
+    max-width: 580px;
+    text-align: center;
+  }
+}
+
+@include breakpoint-down (425px) {
+  .deliver__wrapper {
+    padding-top: 140px;
+    padding-bottom: 164px;
+  }
+  
+  .deliver__heading {
+  max-width: 327px;
+  font-size: 32px;
+  line-height: 32px;
+  }
+  
+  .deliver__card {
+    max-width: 327px;
+  }
+
+  .deliver__quote {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}

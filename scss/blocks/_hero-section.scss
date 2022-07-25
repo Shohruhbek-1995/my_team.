@@ -1,0 +1,144 @@
+// HERO SECTION 
+
+.hero {
+  background-color: #014E56;
+  padding-top: 56px;
+  background-image: url("../../image/hero-left.png");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: 56px;
+}
+
+.hero__left-img {
+ position: absolute;
+ top: 250px;
+ left: 0;
+}
+
+.hero__wrapper {
+  padding-bottom: 255px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-image: url("../../image/hero-bottom.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.hero__heading {
+  margin: 0;
+  max-width: 635px;
+  font-family: Livvic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  color: $white;
+}
+
+.hero__heading-coral {
+  color: $light-coral;
+}
+
+.hero__right-line {
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background: #79C8C7;
+}
+
+.hero__right-text {
+  max-width: 445px;
+  margin-top: 79px;
+font-family: Livvic;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+color: $white;
+}
+
+.hero__right-bottom {
+  margin: 0;
+  margin-top: 155px;
+}
+
+// responsive 
+
+@include breakpoint-down (1200px) {
+  .hero {
+    padding-top: 30px;
+    background-image: none;
+  }
+  
+  
+  .hero__heading {
+    margin: 0;
+    max-width: 635px;
+    font-size: 100px;
+    line-height: 100px;
+    color: $white;
+  }
+  
+  
+  .hero__right-line {
+    display: inline-block;
+  }
+  
+  .hero__right-text {
+   margin-top: 79px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  }
+}
+
+
+@include breakpoint-down (768px) {
+  .hero__heading {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 64px;
+    line-height: 56px;
+  }
+  
+  .hero__right-line {
+    display: none;
+  }
+  
+  .hero__right-text {
+    text-align: center;
+    max-width: 457px;
+    margin-top: 24px;
+  font-size: 15px;
+  line-height: 28px;
+  }
+  .hero__wrapper {
+    padding-bottom: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position-x: center;
+  }
+}
+
+
+@include breakpoint-down (768px) {
+  .hero__heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  
+  .hero__right-text {
+    max-width: 327px;
+    margin-top: 18px;
+  }
+
+  .hero__wrapper {
+    padding-bottom: 197px;
+  }
+}

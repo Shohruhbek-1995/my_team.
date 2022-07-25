@@ -1,0 +1,100 @@
+// about section 
+
+.about-section {
+  background-color: #014E56;
+  background-image: url("../../image/about-right.png");
+  background-size: 100px 200px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 120px 0;
+}
+
+.about-wrapper {
+  display: flex;
+}
+
+.about__heading {
+  margin: 0;
+  font-family: Livvic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100px;
+  color: $white;  
+}
+
+.about__text {
+  padding-left: 20px;
+  font-family: Livvic;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: $white;
+  max-width: 730px;
+  margin-left: auto;
+}
+
+.about__text::before {
+  margin-bottom: 40px;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E;
+}
+
+// responsive 
+
+@include breakpoint-down (965px) {
+  .about-section {
+    padding: 112px 0;
+  }
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about__heading {
+    font-size: 64px;
+    line-height: 56px;
+  }
+
+  .about__text {
+    margin: 24px auto;
+    max-width: 457px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .about__text::before {
+    display: none;
+    content: "";
+  }
+}
+
+@include breakpoint-down (450px) {
+  .about-section {
+    background-color: #014E56;
+    background-image: url("../../image/about-bottom-mobile.png");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 120px 0;
+  }
+
+  .about-section {
+    padding: 108px 0;
+  }
+
+  .about__heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .about__text {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}

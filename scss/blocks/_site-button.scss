@@ -1,0 +1,14 @@
+.site-button {
+  @include site-button;
+  margin-left: auto;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+@include breakpoint-down (768px) {
+  .site-button {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 10px 32px;
+  }
+}

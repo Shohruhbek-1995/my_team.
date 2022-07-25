@@ -1,0 +1,148 @@
+// directors section 
+
+.directors {
+  background-color: #004047;
+  padding-top: 140px;
+  padding-bottom: 168px;
+  background-image: url("../../image/director-left.png"), url("../../image/directors-right.png");
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  background-size: 100px 200px, 147px 100px;
+}
+
+.directors__heading {
+  font-size: 48px;
+  line-height: 48px;
+  margin: 0;
+  margin-bottom: 64px;
+  color: $white;
+  text-align: center;
+}
+
+.directors__list {
+  @include list-unstyled;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.directors__item {
+  width: 350px;
+  height: 253px;
+  background-color: #012F34;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 76px;
+  position: relative;
+  text-align: center;
+}
+
+.directors__img {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.directors__name {
+  margin: 0;
+  margin-top: 16px;
+  font-family: Livvic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79C8C7;
+}
+
+.directors__info {
+  max-width: 254px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+font-family: Livvic;
+font-style: italic;
+font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+color: $white;
+}
+
+.directors__info:last-child {
+  margin-top: 35px;
+}
+
+.directors__button {
+  font-size: 24px;
+  color: #012F34;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: calc(50% - 56px/2);
+  bottom: -28px;
+  background-color: #F67E7E;
+  transition: all 0.5s ease;
+}
+
+.directors__button--active:hover {
+  transform: rotate(45deg);
+  background-color: #79C8C7;
+}
+
+.directors__button:hover {
+  background-color: #79C8C7;
+  cursor: pointer;
+}
+
+.directors__button:active {
+  transform: rotate(45deg);
+  background-color: #79C8C7;
+}
+
+.directors__button--active:hover {
+ background-color: #F67E7E;
+}
+.directors__button--active:active {
+  background-color: #F67E7E;
+  transform: rotate(90deg);
+ }
+
+ .directors__logo {
+   display: inline-block;
+   margin: 24px 8px;
+ }
+
+//  responsive 
+@include breakpoint-down (800px) {
+  
+.directors__heading {
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 48px;
+}
+  .directors__item {
+    width: 281px;
+    height: 253px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 76px;
+  }
+}
+
+@include breakpoint-down (800px) {
+  .directors__item {
+    width: 320px;
+    height: 253px;
+    margin-auto: 5px;
+    margin-auto: 5px;
+    margin-bottom: 52px;
+  }
+}
